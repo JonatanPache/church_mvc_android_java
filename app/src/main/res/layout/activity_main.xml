@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingreso"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="60dp" />
+    <Button
+        android:id="@+id/btnNotaIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota Ingreso"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="60dp" />
+    <Button
+        android:id="@+id/btnActividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <Button
+        android:id="@+id/btnPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persona"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <Button
+        android:id="@+id/btnTipoRelacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TipoRelacion"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <Button
+        android:id="@+id/btnCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargo"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <Button
+        android:id="@+id/btnBitacoraCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BitacoraCargo"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+
+
+</LinearLayout>

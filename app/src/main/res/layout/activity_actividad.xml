@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:parentActivityName=".MainActivity"
+android:orientation="vertical"
+tools:context=".Actividad.ActividadView">
+
+<TextView
+    android:id="@+id/actividad_id"
+    android:layout_width="395dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="28dp"
+    android:layout_x="8dp"
+    android:layout_y="32dp"
+    android:hint="ACTIVIDAD ID:"
+    android:ems="10"
+    android:inputType="none"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/actividad_nombre"
+    android:layout_width="395dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_x="9dp"
+    android:layout_y="151dp"
+    android:ems="10"
+    android:inputType="text"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/actividad_id"
+    android:hint="Nombre" />
+
+<EditText
+    android:id="@+id/actividad_descripcion"
+    android:layout_width="395dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_x="9dp"
+    android:layout_y="94dp"
+    android:ems="10"
+    android:inputType="text"
+    android:hint="Descripcion"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/actividad_nombre" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/labHoraInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora de Inicio :" />
+
+            <EditText
+                android:id="@+id/txtHoraInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time"
+                />
+            <TextView
+                android:id="@+id/labFechaInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha Inicio : " />
+
+            <EditText
+                android:id="@+id/txtFechaInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/labHoraFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora Salida :" />
+
+            <EditText
+                android:id="@+id/txtHoraFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time" />
+            <TextView
+                android:id="@+id/labFechaFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha Final : " />
+
+            <EditText
+                android:id="@+id/txtFechaFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+        </LinearLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Crear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actividad_descripcion" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="39dp"
+        android:layout_x="9dp"
+        android:layout_y="218dp"
+        android:text="Eliminar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEliminar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actividad_descripcion" />
+</LinearLayout>
+
+<ListView
+    android:id="@+id/actividad_list_view"
+    android:layout_width="400dp"
+    android:layout_height="430dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginBottom="68dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+</LinearLayout>
